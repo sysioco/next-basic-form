@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SimpleForm from "./components/SimpleForm";
-import ReactHookForm from "./ReachHookForm";
+import ReactHookForm from "./components/ReachHookForm";
+import ReactHookFormActions from "./components/ReactHookFormActions";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <div className="flex flex-col">
         <h1>React Hooks Forms</h1>
         {/* <SimpleForm /> */}
-        <ReactHookForm />
+        {/* <ReactHookForm /> */}
+        <ReactHookFormActions />
       </div>
     </section>
   );
