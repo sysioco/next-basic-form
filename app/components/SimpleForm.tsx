@@ -12,6 +12,8 @@ export default function SimpleForm() {
     const formData = new FormData(form);
     const formDataObject = Object.fromEntries(formData);
 
+    // validate data
+
     const data = await fetch("/api/form", {
       method: "POST",
       body: JSON.stringify(formDataObject),
